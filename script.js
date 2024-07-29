@@ -1,23 +1,5 @@
-function changeText () {
-    const element = document.getElementById("text");
-    element.innerHTML = "Modified Text";
+const message = 'JavaScript Const Variable that can not be reassigned';
+
+function showMessage() {
+    document.getElementById('message').innerHTML = message;
 }
-
-function changeColor () {
-    const element = document.getElementById("colorBox");
-
-    if (element.style.backgroundColor === "red") {
-        element.style.backgroundColor = 'green';
-    } else  element.style.backgroundColor = 'red';
-}
-
-function updateValue () {
-    const inputElement = document.getElementById("myInput");
-    inputElement.value = "Modified Value";
-}
-
-function removeElement () {
-    const element = document.getElementById("removeText");
-    if (element) element.parentNode.removeChild(element);
-}
-
