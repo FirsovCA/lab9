@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week12</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="header">H1 Tag</h1>
+    <h2 id="text">Original text</h2>
+    <button onclick="changeText()">Change text</button>
+    <div id="colorBox" style="width:100px;height:100px;background-color:red;"></div>
+    <button onclick="changeColor()">Change color</button>
+    <input type="text" id="myInput" value="Original value">
+    <button onclick="updateValue()">Update Value</button>
+    <p id="removeText">This text will be removed</p>
+    <button onclick="removeElement()">Remove Element</button>
+    <script>
+        const header = document.getElementById("header");
+        console.log(header.innerHTML);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
